@@ -1,0 +1,11 @@
+name: GitHub Action PUSH
+run-name: Running - ${{ github.event_name }}
+on: [push] 
+
+jobs: 
+  on-push:
+    runs-on: ubunto-latest
+    steps: 
+      - name: Comentário
+        run: |
+          echo "Comentário do workflow PUSH 🎉"
