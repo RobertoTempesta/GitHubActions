@@ -1,0 +1,13 @@
+name: GitHub Action PUSH - path template
+run-name: Running - ${{ github.event_name }}
+on: 
+  push:
+    paths: 
+        - '**.text'
+jobs: 
+  on-push:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Comentário
+        run: |
+          echo "Comentário do workflow PUSH - paths"
