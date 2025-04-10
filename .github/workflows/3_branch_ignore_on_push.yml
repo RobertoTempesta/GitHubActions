@@ -1,4 +1,4 @@
-name: GitHub Action PUSH - branche template
+name: GitHub Action PUSH - branche-ignore template
 run-name: Running - ${{ github.event_name }}
 on: 
   push:
@@ -11,4 +11,3 @@ jobs:
       - name: Comentário
         run: |
           echo "Comentário do workflow PUSH - branches"
-          
