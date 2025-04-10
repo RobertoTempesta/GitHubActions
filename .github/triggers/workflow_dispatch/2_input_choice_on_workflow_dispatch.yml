@@ -14,7 +14,7 @@ on:
         required: true
 jobs: 
   on-workflow_dispatch:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps: 
       - name: Comentário
         run: |
