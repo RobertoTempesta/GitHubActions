@@ -1,0 +1,14 @@
+name: GitHub Action PUSH - Pull Request Template Branch 
+run-name: Running - ${{ github.event_name }}
+on: 
+  pull_request: 
+    #branches-ignore funciona também mas não pode conter os dois !
+    branches:
+     - master
+jobs: 
+  on-push:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Comentário
+        run: |
+          echo "Comentário PULL REQUEST Workflow - Branch"
